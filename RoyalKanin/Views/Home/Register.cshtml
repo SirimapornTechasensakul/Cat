@@ -1,0 +1,104 @@
+﻿
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout_clear.cshtml";
+}
+
+<center>
+    @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+    {
+        <table style="margin: 50px; background-color: #DBE2EF;" width="500px" border="1">
+            <thead>
+                <tr>
+                    <td align="center"><h1>Register</h1></td>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td width="100%" nowrap="nowrap">
+                                <table width="100%">
+                                    <tr>
+                                        <td align="left"><h2>Your Profile</h2></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Username">ชื่อผู้ใช้ (Username) : </label></td>
+                                        <td colspan="2"><input name="Username" type="text" placeholder="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Password">รหัสผ่าน (Password) : </label></td>
+                                        <td>
+                                            <input id="Password" name="Password" type="password"
+                                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                   title="รหัสผ่านต้องมีอย่างน้อย 8 ตัวและประกอบด้วย a-z, A-Z, 0-9" placeholder="" required />
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="name_user">ชื่อ (First Name) : </label></td>
+                                        <td colspan="2"><input name="name_user" type="text" placeholder="" /></td>
+                                    <tr>
+                                        <td><label for="Lastname_user">นามสกุล (Last Name) : </label></td>
+                                        <td colspan="2"><input name="Lastname_user" type="text" placeholder="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Gender_user">เลขบัตรประชาชน (Citizen ID) : </label></td>
+                                        <td colspan="2"><input name="citizenid_user" type="text" placeholder="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Year_user">เบอร์โทรศัพท์ (Tel.) : </label></td>
+                                        <td colspan="2"><input name="tel_user" type="text" placeholder="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Year_user">ที่อยู่ (Address) : </label></td>
+                                        <td colspan="2"><input name="address_user" type="text" placeholder="" /></td>
+                                    </tr>
+
+                                    <tr><td><br /></td></tr>
+
+                                    <tr>
+                                        <td align="left"><h2>Your Cat</h2></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="name_user">ชื่อของแมว (Cat Name) : </label></td>
+                                        <td colspan="2"><input name="catname_cat" type="text" placeholder="" /></td>
+                                    <tr>
+                                        <td><label for="Lastname_user">วันเกิดของแมว (Birthday) : </label></td>
+                                        <td colspan="2"><input name="birthday_cat" type="text" placeholder="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Gender_user">อาหารของแมว (Cat Bread) : </label></td>
+                                        <td colspan="2"><input name="catbread_cat" type="text" placeholder="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Year_user">สิ่งที่ต้องการเพิ่มเติม (Special Req.) : </label></td>
+                                        <td colspan="2"><input name="specialreq_cat" type="text" placeholder="" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button name="btnSignIn" type="submit">สมัครสมาชิก</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    }
+</center>
+
+
+
+

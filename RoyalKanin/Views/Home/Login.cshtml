@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout_clear.cshtml";
+}
+
+
+<center>
+
+   @using (Html.BeginForm("SignIn", "Home", FormMethod.Post))
+    {
+        <table style="margin: 50px; background-color: #DBE2EF;" width="500px" border="2" >
+            <tr>
+                <td align="center"><h2>เข้าสู่ระบบ</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="margin-top:20px" width="100%">
+                        <tr>
+                            <td align="right"><label for="uname">ชื่อผู้ใช้ (Username):</label>&nbsp;&nbsp;</td>
+                            <td><input name="Username" type="text" placeholder="Enter Username" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="uname">รหัสผ่าน (Password):</label>&nbsp;&nbsp;</td>
+                            <td><input name="Password" type="password" placeholder="Enter Password" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <button name="btnSignIn" type="submit">เข้าสู่ระบบ</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td>
+                                ยังไม่บัญชี ?<br />
+                                <a href="@Url.Action("Register","Home")">สมัครสมาชิก</a><br />
+                                <label for="uname">ลืมรหัสผ่าน (Forgot)</label><a href="@Url.Action("ForgetPassword","Home")">password?</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    }
+</center>

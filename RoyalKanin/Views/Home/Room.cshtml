@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Room";
+    Layout = "~/Views/Shared/_Layout_clear.cshtml";
+}
+    
+        <style>
+            .column {
+                float: left;
+                width: 23%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            p {
+                font-size: 25px;
+                font-family: 'Fira Sans', sans-serif;
+                color: #00334e;
+            }
+
+                p.head {
+                    font-size: 60px;
+                    font-family: 'Fira Sans', sans-serif;
+                    color: #00334e;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+            img {
+                border-radius: 5px;
+            }
+        </style>
+        <div>
+            &nbsp;
+        </div>
+
+        <div>
+            <p class="head"><i>Our Room!</i></p>
+            <div class="row">
+                <div class="column">
+                    <img src="/images/Room3.jpg" class="Room3" alt="Room3" style="width:45%">
+                    <p><i>Gryffindor</i></p>
+                    <p>001</p>
+                    <p>size:50x50</p>
+                    <p>Price:1,500 Bath</p>
+                </div>
+
+
+                <div class="column">
+                    <img src="/images/Room1.jpg"
+                         class="Room1" alt="Room1" style="width:45%">
+                    <p><i>Hufflepuff</i></p>
+                    <p>002</p>
+                    <p>size:60x60</p>
+                    <p>Price:2,500 Bath</p>
+                </div>
+
+                <div class="column">
+                    <img src="/images/Room2.jpg" class="Room2" alt="Room2" style="width:45%">
+                    <p><i>Ravenclaw</i></p>
+                    <p>003</p>
+                    <p>size:70x70</p>
+                    <p>Price:3,500 Bath</p>
+                </div>
+
+                <div class="column">
+                    <img src="/images/Room4.jpg" class="Room4" alt="Room4" style="width:45%">
+                    <p><i>Slytherin</i></p>
+                    <p>004</p>
+                    <p>size:80x80</p>
+                    <p>Price:4,500 Bath</p>
+                </div>
+            </div>
+        </div>
+   

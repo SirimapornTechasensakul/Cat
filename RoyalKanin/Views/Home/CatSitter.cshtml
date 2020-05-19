@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "CatSitter";
+    Layout = "~/Views/Shared/_Layout_clear.cshtml";
+}
+
+<style>
+
+    .column {
+        float: left;
+        width: 30%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    p {
+        font-size: 25px;
+        font-family: 'Fira Sans', sans-serif;
+        color: #00334e;
+    }
+
+        p.head {
+            font-size: 60px;
+            font-family: 'Fira Sans', sans-serif;
+            color: #00334e;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    img {
+        border-radius: 5px;
+    }
+</style>
+
+<div>
+    <div>
+        &nbsp;
+    </div>
+    <p class="head"><i>Our Cat Sitter</i></p>
+    <div class="row">
+        <div class="column">
+            <img src="/images/chayanee.jpg" class="chayanee" alt="chayanee" style="width:40%">
+            <p> Chayanee Petchdee</p>
+            <p> 508326</p>
+        </div>
+
+
+        <div class="column">
+            <img src="/images/Ratchaneekorn.jpg" class="Ratchaneekorn" alt="Ratchaneekorn" style="width:40%">
+            <p> Ratchaneekorn Luangthanusin</p>
+            <p> 508327</p>
+        </div>
+
+
+        <div class="column">
+            <img src="/images/Sujaree.jpg" class="Sujaree" alt="Sujaree" style="width:40%">
+            <p> Sujaree Thairat</p>
+            <p> 508328</p>
+        </div>
+    </div>
+</div>
